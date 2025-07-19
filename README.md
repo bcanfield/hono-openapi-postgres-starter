@@ -47,7 +47,13 @@ Install dependencies
 pnpm install
 ```
 
-Create sqlite db / push schema
+Start postgres db
+
+```sh
+docker-compose up -d
+```
+
+Push schema
 
 ```sh
 pnpm drizzle-kit push

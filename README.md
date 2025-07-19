@@ -42,7 +42,7 @@ cp .env.example .env
 Install dependencies
 
 ```sh
-pnpm install
+bun install
 ```
 
 Start postgres db
@@ -54,25 +54,25 @@ docker-compose up -d
 Push schema
 
 ```sh
-pnpm drizzle-kit push
+bun drizzle-kit push
 ```
 
 Run
 
 ```sh
-pnpm dev
+bun dev
 ```
 
 Lint
 
 ```sh
-pnpm lint
+bun lint
 ```
 
 Test
 
 ```sh
-pnpm test
+bun test
 ```
 
 ## Code Tour

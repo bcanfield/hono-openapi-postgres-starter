@@ -6,10 +6,10 @@
     "baseUrl": "./",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "resolveJsonModule": true,
     "paths": {
       "@/*": ["./src/*"]
     },
+    "resolveJsonModule": true,
     "typeRoots": ["./node_modules/@types"],
     "types": [
       "node"

@@ -7,8 +7,8 @@
     "bun": ">=1.2.0"
   },
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "node ./dist/src/index.js",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run ./dist/src/index.js",
     "reset": "bun run src/db/reset.ts",
     "typecheck": "bun x tsc --noEmit",
     "lint": "eslint .",

@@ -13,6 +13,6 @@ services:
       POSTGRES_DB: db
     volumes:
       - hono-openapi-postgres-starter-db-data:/var/lib/postgresql/data
-      
+
 volumes:
   hono-openapi-postgres-starter-db-data:

@@ -1,17 +1,8 @@
 # Hono Open API Starter
 
-A starter template for building fully documented type-safe JSON APIs with Hono and Open API.
+A starter template for building fully documented type-safe JSON APIs with Hono and Open API and Postgres.
 
-> For a cloudflare specific template, see the [cloudflare branch](https://github.com/w3cj/hono-open-api-starter/tree/cloudflare) on this repo
-
-> For other deployment examples see the [hono-node-deployment-examples](https://github.com/w3cj/hono-node-deployment-examples) repo
-
-- [Hono Open API Starter](#hono-open-api-starter)
-  - [Included](#included)
-  - [Setup](#setup)
-  - [Code Tour](#code-tour)
-  - [Endpoints](#endpoints)
-  - [References](#references)
+Initially cloned from: https://github.com/w3cj/hono-open-api-starter
 
 ## Included
 
@@ -29,7 +20,7 @@ A starter template for building fully documented type-safe JSON APIs with Hono a
 Clone this template without git history
 
 ```sh
-npx degit w3cj/hono-open-api-starter my-api
+npx degit bcanfield/hono-openapi-postgres-starter my-api
 cd my-api
 ```
 
@@ -70,6 +61,8 @@ bun lint
 ```
 
 Test
+
+> **Disclaimer:** These tests require a Postgres database running via Docker Compose and will reset the database. It's recommended to configure a dedicated test-only database.
 
 ```sh
 bun test
